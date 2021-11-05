@@ -1,28 +1,28 @@
 function Pizza(cost, size, toppingOne, toppingTwo) {
+  this.cost = 15;
+  this.size = ("small", "medium", "large");
   this.toppingOne = toppingOne;
   this.toppingTwo = toppingTwo;
-  this.size = size;
-  this.cost = 0;
 }
 
 Pizza.prototype.createCost = function(){
   if (this.size === "small") {
-    this.cost = 13;
+    this.cost -= 2;
   } else if (this.size === "large") {
-    this.cost = 17;
-  } else if (this.size === "medium") {
-    this.cost = 15;
+    this.cost += 1;
+  } else {
+    this.cost;
+    
   }
 }
 
-  if (this.toppingOne === "topping1") {
+ /* if (this.toppingOne === "topping1") {
     this.cost += 1;
   } else if (this.toppingTwo === "topping2") {
     this.cost += 1;
   } else {
   this.cost + 2;
-}
-return this.cost;
+}*/
 
 function displayCost() {
   $("#cost").text(this.cost);

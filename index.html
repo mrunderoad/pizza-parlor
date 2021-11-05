@@ -11,70 +11,84 @@
 
 <body>
   <div class="container">
-  <div class="jumbotron">
-    <h1>Get yourself a tasty pizza-pie from <span class="blue">Dome</span><span class="red">nios</span>!!</h1>
-  </div>
-  <form id="pizza-size">
-    <div class="form-group">
-      <h2>Select your crust size:</h2>
-      <label>
-        <input type="radio" name="crust" value="small">
-        Small (12in)
-      </label>
-      <label>
-        <input type="radio" name="crust" value="medium">
-        Medium (14in)
-      </label>
-      <label>
-        <input type="radio" name="crust" value="large">
-        Large (16in)
-      </label>
+    <div class="jumbotron">
+      <h1>Get yourself a tasty pizza-pie from <span class="blue">Dome</span><span class="red">nios</span>!!</h1>
     </div>
-    <div class="form-group">
-      <h2>Select up to <strong>two</strong> toppings:</h2>
-      <h3>Choose One Meat:</h3>
-      <label>
-        <input type="radio" name="topping1" value="1" checked>
-        Peperoni
-      </label>
-      <label>
-        <input type="radio" name="topping1" value="1">
-        Italian Sausage
-      </label>
-      <label>
-        <input type="radio" name="topping1" value="1">
-        Canadian Bacon
-      </label>
-      <label>
-        <input type="radio" name="topping1" value="1">
-        No Meat
-      </label>
-    </div>
-    <div class="form-group">
-    <h3>Choose One Vegetable:</h3>
-      <label>
-        <input type="radio" name="topping2" value="1" checked>
-        Onions
-      </label>
-      <label>
-        <input type="radio" name="topping2" value="1">
-        Olives
-      </label>
-      <label>
-        <input type="radio" name="topping2" value="1">
-        Jalepenos
-      </label>
-      <label>
-        <input type="radio" name="topping2" value="1">
-        Spinach
-      </label>
-    </div>
-    <button type="submit" class="btn btn-dark">Calculate my Pizza Price!</button>
-  </form>
-  <h4>Your Created Pizza Cost is:</h4>
-  <p><span id="cost"></span></p>
-  <h4>Your Created Pizza is:</h4>
-  <p>You made a pretty solid looking pizza. <span id="size"></span> sized is perfect. Yum! You even got some <span id="topping1"></span> and <span id="topping2"></span> on there. Enjoy your Domenios!</p>
+    <form id="pizza-size">
+      <div class="form-group">
+        <div class="row">
+          <div class="card">
+            <div class="card-md-6">
+              <h2>Select your crust size:</h2>
+              <label>
+                <input type="radio" name="size" value="13" checked>
+                Small (12in)
+              </label>
+              <label>
+                <input type="radio" name="size" value="15">
+                Medium (14in)
+              </label>
+              <label>
+                <input type="radio" name="size" value="17">
+                Large (16in)
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="card">
+            <div class="card-md-6">
+              <h2>Select up to <strong>two</strong> toppings:</h2>
+              <h3>Choose One Meat:</h3>
+              <label>
+                <input type="radio" name="topping1" value="1" checked>
+                Peperoni
+              </label>
+              <label>
+                <input type="radio" name="topping1" value="1">
+                Italian Sausage
+              </label>
+              <label>
+                <input type="radio" name="topping1" value="1">
+                Canadian Bacon
+              </label>
+              <label>
+                <input type="radio" name="topping1" value="0">
+                No Meat
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <div class="card">
+              <div class="card-md-8">
+                <h3>Choose One Vegetable:</h3>
+                <label>
+                  <input type="radio" name="topping2" value="1" checked>
+                  Onions
+                </label>
+                <label>
+                  <input type="radio" name="topping2" value="1">
+                  Olives
+                </label>
+                <label>
+                  <input type="radio" name="topping2" value="1">
+                  Jalepenos
+                </label>
+                <label>
+                  <input type="radio" name="topping2" value="1">
+                  Spinach
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark">Calculate my Pizza Price!</button>
+    </form>
+    <h4>Your Created Pizza Cost is:</h4>
+    <p><span id="cost"></span></p>
   </div>
 </body>
+
 </html>

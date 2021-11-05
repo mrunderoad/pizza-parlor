@@ -1,6 +1,14 @@
+.jumbotron {
+  padding: 20px;
+  margin-top: 20px;
+}
+
 h1 {
-  text-align: center;
-  
+  text-align: center; 
+}
+
+body {
+  background-color: rgba(109, 114, 119, 0.623);
 }
 
 .blue {
