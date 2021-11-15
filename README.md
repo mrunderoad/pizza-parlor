@@ -31,16 +31,24 @@ MIT licensing @https://opensource.org/licenses/MIT
 Copyright (c) 10/29/2021 Isaac Overstreet
 
 
+## Tests
 
+#### Describe: Pizza()
 
-Describe: Pizza()
+Test: "Should return pizza price based on size"
+Code: "const myPizza = new Pizza {"small", "medium" or "large"};
+Expected Output: "13" "15" or "17"
 
-Test: "Should return pizza object with two toppings and size"
-Code: "const myPizza = new Pizza {["bacon", "sausage"], "large"};
-Expected Output: pizza {toppings: ["bacon", "sausage"] size: "large"}
+#### Describe: pizza.prototype.createCost();
 
-Describe: pizza.prototype.createPizza();
+Test: "Should return correct pricing on toppings"
+Code: createCost();
+Expected Output: 1, 2, or 3 depending on cost pricing. 
 
-Test: "Should return correct pricing on pizza"
-Code: pizza.createPizza();
-Expected Output: Should be whatever pizza options they chose scored up and returned the value. 
+Test: "Should return cost with size + toppings"
+Code: createCost();
+Expected Output: small(13) + cost of toppings. medium(15) plus cost of toppings large(17) plus cost of toppings.
+
+Test: "Should correctly display total cost"
+Code: costToDisplay();
+Expected Output: Any cost of pizza size plus toppings. 
